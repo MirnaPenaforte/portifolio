@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: black;
+    background-color: black; 
 
 }
 
@@ -51,17 +51,32 @@ header div nav ul li a{
 
 
 main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: initial;
+    font-size: 22px;
     text-align: center;
-    margin-top: 60px;
     padding: 2px 200px 2px 200px ;
     color: white;
-    /* background-image: logo-fundo.png; */
+    margin: 312px auto;
+
+}
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 42px;
+    margin-bottom: 16px;
+    color: white;
 }
 
 .sobre-mim{
-    background-color: rgb(17, 65, 61);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(128, 133, 132);
     padding: 10px 20px 10px 20px;
-    margin-top: 40px;
+    margin-top: 212px;
     border-radius: 20px;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -69,55 +84,55 @@ main{
     line-height: 1.6;
     text-align: center;
     width: 80%;
-    margin: 80px auto;
+    margin: 272px auto;
 
 }
 
 #h2sobremim {
-    background-color: rgb(17, 65, 61);
+    background-color: rgb(128, 133, 132);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #eu {
     margin-top: 20px;
-    text-align: justify;
-    font-size: 16px;
+    text-align: center;
+    font-size: 22px;
     color: rgb(240, 240, 240);
-}
-
-
-.titulotempo {
-    /* esse ta mechendo na caixa de texto quanto tempo */
-    background-color: rgb(14, 14, 133);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
-    margin-bottom: 16px;
-    color: white;
-}
-
-.textotempo {
-    font-size: 14px;
-    text-align: left;
-    color: rgb(110, 12, 12);
-    background-color:#0cd1c4;
 }
 
 .conteiner {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    width: 90%;
+    margin: 69px auto;
 }
 
 .tempo {
-
-    background-color: rgb(82, 82, 155);
-   padding:20px;
-    width: 28%;
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(222, 222, 231);
+    padding:30px 50px;
+    width: 30%;
     border-radius: 20px;
     text-align: left;
-    transition: transform 0.3s;
-    box-shadow: #0cd1c4;
+    
 }
+
+.titulotempo {
+    background-color: rgb(222, 222, 231);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    margin-bottom: 16px;
+    color: black;
+}
+
+.textotempo {
+    font-size: 14px;
+    text-align: left;
+    color: black;
+    background-color:rgb(222, 222, 231);
+}
+
 
 .skill{
     display: flex;
@@ -136,7 +151,8 @@ main{
 #titleSkill{
     
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-bottom: 20px;
+    margin-bottom: 42px;
+    margin-top: 172px;
 }
 
 
@@ -152,23 +168,34 @@ main{
     flex-wrap: wrap;
 }
 
-#containerProjetos {
+.h2Projetos{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 42px;
+    color: white;
+    margin-top: 172px;
+    
+}
+
+.containerProjetos {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    gap: 32px;
+
 }
 
 .robotica {
-    background-image: url(imagens/Robot.png);
     display: flex;
     flex-direction: column;
     text-align: start;
     color: white;
-    background-color: rgb(82, 82, 155);
-    width: 100%;
-    border-radius: 10px;
-    padding: 40px 33px;
+    background-color: rgb(150, 150, 182);
+    background-image: url(imagens/Robot.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 300px;
+    border-radius: 14px;
+    padding: 3rem;
     gap: 13px;
 
 }
@@ -189,4 +216,39 @@ main{
 
 .link {
     color: white;
+}
+
+footer {
+    display: grid;
+    background-image: url(imagens/Logo.png);
+    background-color: black;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: end;
+    justify-items: end;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 120px;
+    margin: 58px 0 0 0;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+}
+
+.footeresquerda {
+    display: grid;
+    align-items: center;
+    justify-items: flex-end;
+    font-size: 28px;
+    color: white;
+    margin-left: 80px;
+}
+
+.footerdireita {
+ display: grid;
+    align-items: center;
+    justify-items: flex-end;
+    font-size: 28px;
+    color:white;
+    margin-right: 88px;
 }
