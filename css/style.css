@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+
+}
+
+header {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: black;
+    padding: 10px 40px;
+    border-bottom: 2px solid white;
+}
+
+header div img{
+    display: flex;
+    justify-content: center;
+    margin-left: 54px;
+   
+}
+
+header div nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+    margin-top: 36px;
+    margin-right: 54px;
+}
+
+header div nav ul li {
+    margin-left: 20px;
+    color: white;
+}
+
+header div nav ul li a{
+    list-style: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(244, 244, 245);
+    font-size: 28px;
+    text-decoration: none;
+}
+
+
+main{
+    text-align: center;
+    margin-top: 60px;
+    padding: 2px 200px 2px 200px ;
+    color: white;
+    /* background-image: logo-fundo.png; */
+}
+
+.sobre-mim{
+    background-color: rgb(17, 65, 61);
+    padding: 10px 20px 10px 20px;
+    margin-top: 40px;
+    border-radius: 20px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    width: 80%;
+    margin: 80px auto;
+
+}
+
+#h2sobremim {
+    background-color: rgb(17, 65, 61);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#eu {
+    margin-top: 20px;
+    text-align: justify;
+    font-size: 16px;
+    color: rgb(240, 240, 240);
+}
+
+
+.titulotempo {
+    /* esse ta mechendo na caixa de texto quanto tempo */
+    background-color: rgb(14, 14, 133);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    margin-bottom: 16px;
+    color: white;
+}
+
+.textotempo {
+    font-size: 14px;
+    text-align: left;
+    color: rgb(110, 12, 12);
+    background-color:#0cd1c4;
+}
+
+.conteiner {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.tempo {
+
+    background-color: rgb(82, 82, 155);
+   padding:20px;
+    width: 28%;
+    border-radius: 20px;
+    text-align: left;
+    transition: transform 0.3s;
+    box-shadow: #0cd1c4;
+}
+
+.skill{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin:0px auto;
+    padding: 20px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 80%;
+    gap: 90px;
+}
+
+#titleSkill{
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+}
+
+
+.projetos{
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+#containerProjetos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.robotica {
+    background-image: url(imagens/Robot.png);
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    color: white;
+    background-color: rgb(82, 82, 155);
+    width: 100%;
+    border-radius: 10px;
+    padding: 40px 33px;
+    gap: 13px;
+
+}
+
+.textorobotica{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+
+}
+
+.discription{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    margin: 10px;
+    color: rgb(240, 240, 240);
+    text-align: justify;
+}
+
+.link {
+    color: white;
+}
